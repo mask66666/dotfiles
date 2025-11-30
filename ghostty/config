@@ -5,10 +5,6 @@ cursor-color = #ffffff
 cursor-style = bar
 cursor-style-blink = false
 
-window-padding-x = 10
-window-padding-y = 10
-window-padding-balance = true
-
 window-decoration = false
 
 keybind = ctrl+shift+d=new_split:right
