@@ -1,0 +1,11 @@
+width=480
+height=320
+location=center
+show=drun
+prompt=Search...
+filter_rate=100
+allow_images=true
+no_actions=true
+halign=fill
+orientation=vertical
+content_halign=fill
