@@ -14,3 +14,4 @@ font-family = JetBrainsMonoLGS Nerd Font Mono
 font-size = 10
 
 keybind = shift+enter=text:\n
+confirm-close-surface=false
