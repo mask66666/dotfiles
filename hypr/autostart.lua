@@ -1,0 +1,5 @@
+hl.on("hyprland.start", function()
+    hl.exec_cmd("waybar")
+    hl.exec_cmd("/usr/lib/xfce4/xfconf/xfconfd")
+    hl.exec_cmd("xfsettingsd")
+end)
