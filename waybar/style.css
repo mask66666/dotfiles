@@ -1,3 +1,11 @@
+@define-color bg-mid #1e1e1e;
+@define-color bg-light #2c2c2c;
+@define-color text-color #e0e0e0;
+@define-color text-color-light #ffffff;
+@define-color text-color-dark #888888;
+@define-color urgent #c62828;
+@define-color warning #ffb74d;
+
 * {
     border: none;
     font-family: "mononoki", "JetBrainsMono Nerd Font", monospace;
@@ -6,10 +14,9 @@
 }
 
 window#waybar {
-    background-color: #1E1E1E;
-    color: #E0E0E0;
+    background-color: @bg-mid;
+    color: @text-color;
 }
-
 
 #clock,
 #cpu,
@@ -18,17 +25,9 @@ window#waybar {
 #pulseaudio,
 #tray,
 #workspaces,
-#window {
-    background-color: #2C2C2C;
-    padding: 0px 10px;
-    margin: 4px 2px;
-    border-radius: 4px;
-}
-
 #custom-power {
-    background-color: #2C2C2C;
-    color: #E0E0E0;
-    padding: 0px 10px;
+    background-color: @bg-light;
+    padding: 0 10px;
     margin: 4px 2px;
     border-radius: 4px;
 }
@@ -38,76 +37,69 @@ window#waybar {
     padding: 0;
 }
 
-#custom-quit,
-#custom-lock,
-#custom-reboot {
-    background-color: #2C2C2C;
-    padding: 0px 12px;
-    margin: 4px 0px;
-}
-
-#custom-quit {
-    color: #C62828;
-}
-
-#custom-reboot {
-    color: #FFB74D;
-}
-
-#custom-lock {
-    color: #E0E0E0;
-}
-
-#group-power>* {
+#group-power > * {
     margin: 4px 1px;
 }
 
-#clock.date {
-    color: #E0E0E0;
+#custom-quit,
+#custom-lock,
+#custom-reboot {
+    background-color: @bg-light;
+    padding: 0 12px;
 }
 
+#custom-quit {
+    color: @urgent;
+}
+
+#custom-reboot {
+    color: @warning;
+}
+
+#custom-lock {
+    color: @text-color;
+}
+
+#clock.date,
 #clock.time {
-    color: #ffffff;
-    background-color: #2C2C2C;
+    color: @text-color;
 }
 
 #workspaces button {
     padding: 0 5px;
-    color: #888888;
+    color: @text-color-dark;
 }
 
 #workspaces button.active {
-    color: #ffffff;
+    color: @text-color-light;
 }
 
 #workspaces button.urgent {
-    background-color: #C62828;
-    color: #ffffff;
+    background-color: @urgent;
+    color: @text-color-light;
 }
 
 /* --- CENTER MODULES --- */
 
 #window {
     background-color: transparent;
-    color: #ffffff;
+    color: @text-color-light;
+    padding: 0 10px;
+    margin: 4px 2px;
 }
 
 /* --- RIGHT MODULES --- */
 
 #cpu.critical {
-    background-color: #C62828;
-    color: white;
+    background-color: @urgent;
+    color: @text-color-light;
 }
 
 #network.disconnected {
-    background-color: #C62828;
+    background-color: @urgent;
 }
 
 #pulseaudio.muted {
-    background-color: #4A4A4A;
-    color: #B0B0B0;
-}
-
-#tray {
-    background-color: #2C2C2C;
+    background-color: #4a4a4a;
+    color: #b0b0b0;
 }

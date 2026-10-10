@@ -34,6 +34,8 @@ hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:mag
 
 -- SUPER + SHIFT + Print (Corrected "PRINT" to "Print")
 hl.bind(mainMod .. " + SHIFT + Print", hl.dsp.exec_cmd("hyprshot -m region -c"))
+-- SUPER + ALT + Print (Corrected "PRINT" to "Print")
+hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd("hyprshot -m output -c"))
 -- CTRL + Print (Corrected "Control_L" to "CTRL" and "PRINT" to "Print")
 hl.bind("CTRL + Print", hl.dsp.exec_cmd("hyprshot -m region --raw | satty --filename -"))
 
@@ -58,3 +60,7 @@ hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"), { locked = true })
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
+
+-- EasyEffects mic processing toggle
+hl.bind(mainMod .. " + F9", hl.dsp.exec_cmd("flatpak run com.github.wwmm.easyeffects --bypass 1"))
+hl.bind(mainMod .. " + SHIFT + F9", hl.dsp.exec_cmd("flatpak run com.github.wwmm.easyeffects --bypass 2"))
