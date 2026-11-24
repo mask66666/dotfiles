@@ -1,0 +1,53 @@
+(
+    home: "!b",
+    routes: {
+        "!b": (
+            home: "https://search.brave.com",
+            template: "https://search.brave.com/search?q={q}",
+        ),
+        "!bi": (
+            home: "https://search.brave.com/images",
+            template: "https://search.brave.com/images?q={q}",
+        ),
+        "!d": (
+            home: "https://duckduckgo.com",
+            template: "https://duckduckgo.com/?q={q}",
+        ),
+        "!di": (
+            home: "https://duckduckgo.com/?ia=images&iax=images",
+            template: "https://duckduckgo.com/?q={q}&ia=images&iax=images",
+        ),
+        "!g": (
+            home: "https://www.google.com",
+            template: "https://www.google.com/search?q={q}",
+        ),
+        "!gi": (
+            home: "https://images.google.com",
+            template: "https://www.google.com/search?tbm=isch&q={q}",
+        ),
+        "!gh": (
+            home: "https://github.com",
+            template: "https://github.com/search?q={q}",
+        ),
+        "!yt": (
+            home: "https://www.youtube.com",
+            template: "https://www.youtube.com/results?search_query={q}",
+        ),
+        "!w": (
+            home: "https://en.wikipedia.org",
+            template: "https://en.wikipedia.org/w/index.php?search={q}",
+        ),
+        "!ci": (
+            home: "https://crates.io",
+            template: "https://crates.io/search?q={q}",
+        ),
+        "!gm": (
+            home: "https://www.google.com/maps",
+            template: "https://www.google.com/maps/search/{q}",
+        ),
+        "!gt": (
+            home: "https://translate.google.com",
+            template: "https://translate.google.com/?sl=auto&tl=en&text={q}&op=translate",
+        ),
+    },
+)
